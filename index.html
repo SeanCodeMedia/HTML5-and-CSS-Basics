@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My First website</title>
+
+<style type="text/css">
+
+     /*
+       <!-- https://stackoverflow.com/questions/14142378/how-can-i-fill-a-div-with-an-image-while-keeping-it-proportional -->
+     */
+
+	.navbar{
+		width: 100%;
+		max-height:20%;
+		background-color:#0F1011;
+		position:fixed;
+		overflow: hidden;
+	}
+
+	.brand{
+ 		float: left;
+		text-decoration: none; 
+		color:#fff;
+		text-align: center;
+		padding-left:50px;
+		padding-right:30px;
+
+	}
+
+	.navbar-items {
+        
+        float: left;
+		text-decoration: none; 
+		color:#fff;
+		text-align: center;
+		padding-left:50px;
+		padding-top: 30px;
+		padding-right:30px;
+		padding-bottom:35px;
+		background-color:#0F1011;
+	}
+    
+	.fill {
+	    display: flex;
+	    justify-content: center;
+	    align-items: center;
+	    overflow: hidden
+	} 
+
+.fill img {
+    flex-shrink: 0;
+    min-width: 100%;
+    max-height:50%;
+}
+
+
+.images img{
+      width:100%;
+      height:300px;
+      padding:0px;
+	  background-position:center;
+} 
+
+
+
+ .boxs{
+ 	 width:500px; 
+ 	 height:600px;
+ 	 margin-top:15%;
+ 	 margin-left:5%;
+ 	 margin-bottom:10%;
+	 padding-right:0%;
+	 background-color:#072A42;
+	 float:left;
+}
+
+.footerText{ 
+   
+     padding-left:100px;
+
+}
+.text{ 
+      padding:40px;
+      padding-top:20px;
+	  text-align:left;
+	  color:#fff;
+}
+
+.button a{
+
+	 width:100px; 
+	 height:50px;
+	 padding:10px;
+	 padding-top:10px;
+	 padding-bottom:10px;
+	 text-align: center;
+	 font-weight: bold;
+	 margin-left:70%;
+	 background-color:#0F1011;
+	 color:#fff;
+	 text-decoration: none; 
+}
+
+
+body{
+	background-color:#031521; 
+	margin:0px;
+}
+
+footer{
+    width:100%;
+    height:10%;
+    position: fixed;
+	background-color:#0F1011;
+	bottom:0px;
+	padding:10px;
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="navbar">
+    <h1 class="brand">Jay Cook Shop</h1>
+    <a class="navbar-items">Home</a>
+    <a class="navbar-items">Store</a>
+    <a class="navbar-items">Bookings</a>
+    <a class="navbar-items">Contact Us</a>
+</div>
+
+
+
+<div class="fill">
+    <img src="images/image1.jpg" alt="Sorry cannot be found" />
+</div>
+ <center>
+ 	
+ 	<div class="boxs">
+   	 	  <div class="images">
+   	 	  	 <img src="images/image1.jpg" alt="Sorry cannot be found" />
+   	 	  </div>
+          
+          <p class="text">
+            Produce, or the term used to describe fresh fruits and vegetables, is commonly purchased by grocery store shoppers. In terms of fruit, most grocery stores offer bananas, apples, oranges, blackberries, raspberries, grapes, pineapples, cantaloupes, watermelons, and more; other grocery stores with larger produce selections might offer the listed fruits in addition to less common fruits, including mangoes, honeydews, starfruits, coconuts, and more.
+          </p>
+           
+           	<div class="button">
+           		<a href="">See Proudct</a>
+           	</div>
+
+   	 </div>
+
+   	 <div class="boxs">
+   	 	  <div class="images">
+   	 	  	 <img src="images/image1.jpg" alt="Sorry cannot be found" />
+              
+           		<p class="text">
+            Produce, or the term used to describe fresh fruits and vegetables, is commonly purchased by grocery store shoppers. In terms of fruit, most grocery stores offer bananas, apples, oranges, blackberries, raspberries, grapes, pineapples, cantaloupes, watermelons, and more; other grocery stores with larger produce selections might offer the listed fruits in addition to less common fruits, including mangoes, honeydews, starfruits, coconuts, and more.
+          		</p>
+
+          <div class="button">
+
+           	<a href="">See Proudct</a>
+
+           </div>
+
+   	 	  </div>
+   	 </div>
+
+   	  <div class="boxs">
+   	 	 <div class="images">
+   	 	  	 <img src="images/image1.jpg" alt="Sorry cannot be found" />
+
+   	 	  	<p class="text">
+            Produce, or the term used to describe fresh fruits and vegetables, is commonly purchased by grocery store shoppers. In terms of fruit, most grocery stores offer bananas, apples, oranges, blackberries, raspberries, grapes, pineapples, cantaloupes, watermelons, and more; other grocery stores with larger produce selections might offer the listed fruits in addition to less common fruits, including mangoes, honeydews, starfruits, coconuts, and more.
+          </p>
+
+          <div class="button">
+           		<a href="">See Proudct</a>
+           	</div>
+
+
+   	 	  </div>
+   	 </div>
+
+ </center>
+
+
+ <footer>
+ 	<center>
+ 		<div class="text">
+          Copy right 2021
+ 		</div>
+ 	</center>
+ 
+ </footer>
+   
+
+</body>
+
+</html>
