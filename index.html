@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>My First website</title>
+	<title>Jay Cook Shop</title>
 
 <style type="text/css">
 
@@ -9,12 +9,14 @@
        <!-- https://stackoverflow.com/questions/14142378/how-can-i-fill-a-div-with-an-image-while-keeping-it-proportional -->
      */
 
+
 	.navbar{
 		width: 100%;
 		max-height:20%;
 		background-color:#0F1011;
 		position:fixed;
 		overflow: hidden;
+    z-index: 10000;
 	}
 
 	.brand{
@@ -75,8 +77,10 @@
 }
 
 .footerText{ 
-   
-     padding-left:100px;
+     color:#fff;
+     padding-top:40px;
+     padding-left:50px;
+     font-weight:bold;
 
 }
 .text{ 
@@ -84,6 +88,12 @@
       padding-top:20px;
 	  text-align:left;
 	  color:#fff;
+}
+
+.welcomeBox{
+     position: absolute;
+     font-size:50px;
+     padding-bottom:500px;
 }
 
 .button a{
@@ -101,6 +111,10 @@
 	 text-decoration: none; 
 }
 
+.mainButton a{
+  margin:0px !important;
+}
+
 
 body{
 	background-color:#031521; 
@@ -113,6 +127,7 @@ footer{
     position: fixed;
 	background-color:#0F1011;
 	bottom:0px;
+
 	padding:10px;
 
 }
@@ -124,22 +139,32 @@ footer{
 
 <div class="navbar">
     <h1 class="brand">Jay Cook Shop</h1>
-    <a class="navbar-items">Home</a>
-    <a class="navbar-items">Store</a>
-    <a class="navbar-items">Bookings</a>
-    <a class="navbar-items">Contact Us</a>
+    <a class="navbar-items" href="index.html">Home</a>
+    <a class="navbar-items" href="store.html">Store</a>
+    <a class="navbar-items" href="contact.html">Contact Us</a>
 </div>
 
 
 
 <div class="fill">
     <img src="images/image1.jpg" alt="Sorry cannot be found" />
+     
+     <div  class="welcomeBox text" >
+        <h3>The Best Cook Shop In Town</h3>
+        <center>
+          <div class=" mainButton button ">
+              <a href="store.html"> Go To Cook Shop</a>
+          </div>
+        </center>
+     </div>
+    
+
 </div>
  <center>
  	
  	<div class="boxs">
    	 	  <div class="images">
-   	 	  	 <img src="images/image1.jpg" alt="Sorry cannot be found" />
+   	 	  	 <img src="images/image2.jpg" alt="Sorry cannot be found" />
    	 	  </div>
           
           <p class="text">
@@ -147,14 +172,14 @@ footer{
           </p>
            
            	<div class="button">
-           		<a href="">See Proudct</a>
+           		<a href="store.html">See Proudct</a>
            	</div>
 
    	 </div>
 
    	 <div class="boxs">
    	 	  <div class="images">
-   	 	  	 <img src="images/image1.jpg" alt="Sorry cannot be found" />
+   	 	  	 <img src="images/image3.jpg" alt="Sorry cannot be found" />
               
            		<p class="text">
             Produce, or the term used to describe fresh fruits and vegetables, is commonly purchased by grocery store shoppers. In terms of fruit, most grocery stores offer bananas, apples, oranges, blackberries, raspberries, grapes, pineapples, cantaloupes, watermelons, and more; other grocery stores with larger produce selections might offer the listed fruits in addition to less common fruits, including mangoes, honeydews, starfruits, coconuts, and more.
@@ -162,7 +187,7 @@ footer{
 
           <div class="button">
 
-           	<a href="">See Proudct</a>
+           	<a href="store.html">See Proudct</a>
 
            </div>
 
@@ -171,14 +196,14 @@ footer{
 
    	  <div class="boxs">
    	 	 <div class="images">
-   	 	  	 <img src="images/image1.jpg" alt="Sorry cannot be found" />
+   	 	  	 <img src="images/image4.jpg" alt="Sorry cannot be found" />
 
    	 	  	<p class="text">
             Produce, or the term used to describe fresh fruits and vegetables, is commonly purchased by grocery store shoppers. In terms of fruit, most grocery stores offer bananas, apples, oranges, blackberries, raspberries, grapes, pineapples, cantaloupes, watermelons, and more; other grocery stores with larger produce selections might offer the listed fruits in addition to less common fruits, including mangoes, honeydews, starfruits, coconuts, and more.
           </p>
 
           <div class="button">
-           		<a href="">See Proudct</a>
+           		<a href="store.html">See Proudct</a>
            	</div>
 
 
@@ -190,8 +215,8 @@ footer{
 
  <footer>
  	<center>
- 		<div class="text">
-          Copy right 2021
+ 		<div class="footerText" id="footerID">
+       
  		</div>
  	</center>
  
@@ -200,4 +225,13 @@ footer{
 
 </body>
 
+<script>
+  var dateObject = new Date();
+  var year = dateObject.getFullYear();
+
+  document.getElementById('footerID').innerHTML = 'Copy Right ' + year;
+
+</script>
+
 </html>
+
